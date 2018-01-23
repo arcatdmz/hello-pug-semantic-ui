@@ -8,25 +8,42 @@ mixin header(message)
 mixin body
   section: .ui.segment
     h2.ui.header #{package.name}
-    p This repository contains a boilerplate for start using <code>pug</code> and <code>Semantic UI</code> to build a clean website consisted of static HTML/CSS/JavaScript files.
+    p This repository contains a boilerplate for start using 
+      a(href='https://pugjs.org'): code Pug
+      |  and 
+      a(href='https://semantic-ui.com'): code Semantic UI
+      |  to build a clean website consisted of static HTML/CSS/JavaScript files.
     h3.ui.header Prerequisite
     ul
       li Windows, macOS, Linux, all OK!
-      li Install <code>Node.js</code> as well as <code>Gulp</code> (<code>npm install -g gulp-cli</code>) before typing the commands below.
+      li Install 
+        a(href='https://nodejs.org'): code Node.js
+        |  as well as 
+        a(href='https://gulpjs.com/'): code Gulp
+        |  (<code>npm install -g gulp-cli</code>) before typing the commands below.
     h3.ui.header How to build this website
     ol
-      li Simply fork/clone the repo
+      li Simply fork/clone 
+        a(href='https://github.com/arcatdmz/hello-pug-semantic-ui') the repo
       li <code>npm install</code>
       li <code>gulp</code>
       li Done!
     p These simple steps would build the entire Semantic UI framework as well as pug files in the <code>pug</code> directory.
     p After you edit pug files, you probably want to only compile them (not the Semantic UI framework) &mdash; type <code>gulp pug</code> for that. Read the gulpfile.js to find out why that would not compile the framework.
     h3.ui.header Next step?
-    p You might want to check out <code>browser-sync</code> for auto-reloading the web browser whenever the source code is edited, <code>htmlhint</code> for syntax-checking the produced HTML files, <code>gulp-purifycss</code> for removing unused CSS code from the huge Semantic UI CSS file.
+    p You might want to check out 
+      a(href='https://www.browsersync.io'): code browser-sync
+      |  for auto-reloading the web browser whenever the source code is edited, 
+      a(href='https://github.com/bezoerb/gulp-htmlhint'): code gulp-htmlhint
+      |  for syntax-checking the produced HTML files, 
+      a(href='https://github.com/purifycss/gulp-purifycss'): code gulp-purifycss
+      |  for removing unused CSS code from the huge Semantic UI CSS file.
     p Good luck!
-    .ui.divider
-    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lacinia facilisis est sit amet scelerisque. Sed quis nulla sit amet turpis luctus posuere. Integer sit amet dictum ex. Duis in enim turpis. Vivamus facilisis efficitur nibh, ac porta sapien congue eu. Suspendisse id porta sem. Vestibulum dignissim velit id ante porttitor, eget blandit massa tristique. Proin suscipit sit amet magna ac luctus. Etiam in lorem pulvinar libero posuere tincidunt quis et nisi. Praesent eu nisl ac elit euismod bibendum eu ut enim. Proin tincidunt tempor magna, lobortis feugiat massa bibendum eu. Curabitur suscipit consequat efficitur. Sed aliquam nisl vitae arcu lobortis euismod. Proin gravida, tortor vitae tincidunt fermentum, nisl odio fringilla orci, id pellentesque metus augue ac tellus. Duis quis urna vehicula, rutrum elit aliquam, laoreet nisl. Sed porttitor sem odio, nec rhoncus mauris lacinia a.
-    p Nunc in urna est. Morbi eu neque interdum neque scelerisque malesuada. Vivamus vestibulum, dolor vitae malesuada pretium, sapien enim congue velit, sed semper metus odio tristique elit. Suspendisse eros nibh, convallis vel urna non, viverra sodales lacus. Cras dui augue, porta eget tempus non, imperdiet ac felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas vitae maximus erat.
+    p For an example of more advanced <code>gulpfile.js</code>, see 
+      a(href='https://github.com/arcatdmz/junkato.jp/blob/master/gulpfile.js') junkato.jp/gulpfile.js at master
+      |  used to build 
+      a(href='https://junkato.jp') junkato.jp
+      | .
   .ui.hidden.divider
   section: .ui.piled.segment
     h2.ui.header package.json content
@@ -34,7 +51,7 @@ mixin body
 
 mixin footer
   .ui.divider
-  footer: p &copy; Jun Kato | 2018 | all code in this repo is MIT-licensed
+  footer: p &copy; <a href="https://junkato.jp">Jun Kato</a> | 2018 | all code in this repo is MIT-licensed
 
 doctype html
 html(lang='en')
